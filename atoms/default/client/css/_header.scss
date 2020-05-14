@@ -10,7 +10,7 @@ header.content__head--interactive,
   background-position: 90% 50%;
   position: relative;
   z-index: 10;
-  margin-bottom: 93px;
+  margin-bottom: 250px;
 
   @include mq(mobileLandscape) {
     padding-bottom: 0;
@@ -22,7 +22,7 @@ header.content__head--interactive,
     background-size: auto 640px;
     height: 555px;
     margin: 0 auto;
-    margin-bottom: 93px;
+    margin-bottom: 300px;
   }
   @include mq(desktop) {
     width: 980px;
@@ -117,36 +117,54 @@ header.content__head--interactive,
     }
   }
 
+  .content__standfirst,
+  .standfirst {
+    padding: 6px 10px 20px;
+    font-size: 20px;
+    line-height: 1;
+    font-family: "Guardian Egyptian Web", "Guardian Headline Full",
+      "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
+
+    color: #241006;
+    position: absolute;
+    left: -10px;
+    bottom: -250px;
+
+    @include mq(tablet) {
+      line-height: auto;
+      font-size: 25px;
+      // bottom: 0;
+      left: -20px;
+      right: 220px;
+    }
+    @include mq(desktop) {
+      padding: 6px 20px 20px;
+      font-size: 64px;
+      right: -120px;
+    }
+    @include mq(leftCol) {
+      font-size: 64px;
+      padding-top: 0;
+      margin-top: -9px;
+      line-height: 1;
+      left: -170px;
+      body.ios &,
+      body.android & {
+        background-color: transparent;
+      }
+    }
+    @include mq(wide) {
+      font-size: 64px;
+      padding-right: 40px;
+      left: -250px;
+    }
+  }
+
   .content__main-column,
   & > .gs-container {
     height: $mobile-header-height * 1vw;
     @include mq(mobileLandscape) {
       height: 100%;
-    }
-  }
-
-  .content__standfirst,
-  .standfirst {
-    position: absolute;
-    bottom: 0;
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 800;
-    color: #f6f6f6;
-    .ios &,
-    .android & {
-      padding-right: 0;
-      .standfirst__inner {
-        background-color: transparent;
-      }
-    }
-    @include mq(leftCol) {
-      font-size: 36px;
-      line-height: 40px;
-      max-width: 540px;
-    }
-    p {
-      margin-bottom: 0;
     }
   }
 
