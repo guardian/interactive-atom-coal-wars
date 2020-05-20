@@ -14,6 +14,48 @@
     height: auto;
   }
 
+  .quoted {
+    font-family: "Guardian Egyptian Web", "Guardian Headline Full", "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
+    font-size: 20px;
+    line-height: 1.2;
+    padding-right: 20%;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    font-weight: 200;
+    margin: 24px 0;
+
+    em {
+      display: block;
+    }
+
+    @include mq(tablet) {
+      line-height: auto;
+      font-size: 25px;
+      margin-left: -20px;
+      padding-left: 20px;
+    }
+    @include mq(desktop) {
+      padding-top: 10px;
+      font-size: 30px;
+    }
+
+    @include mq(leftCol) {
+      border-left: 1px solid #dcdcdc;
+      margin-left: 0;
+    }
+
+    &:before {
+      font-weight: 600;
+      color: #c70000;
+      content: '“';
+      display: block;
+      font-size: 3.5em;
+      line-height: 10px;
+      margin-top: 30px;
+      margin-bottom: -6px;
+    }
+  }
+
   // // CAPTIONS
   .element-image__caption {
     padding: 6px 0 6px 0;
