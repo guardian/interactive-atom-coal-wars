@@ -4,10 +4,9 @@ $mobileLandscape-header-height: 600px;
 
 header.content__head--interactive,
 .article .article__header {
-
   // Picture pseudoelement
   & > .gs-container:before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 0;
@@ -42,7 +41,6 @@ header.content__head--interactive,
     }
   }
 
-
   .content__labels,
   .article-kicker {
     // position: absolute;
@@ -72,7 +70,6 @@ header.content__head--interactive,
     }
   }
 
-
   .content__headline,
   .headline {
     padding: 6px 10px 20px;
@@ -82,7 +79,7 @@ header.content__head--interactive,
       "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
     margin-left: -10px;
     margin-top: 117vw;
-    color: #fef0e8;
+    color: #fcf1e9;
     background-color: #241006;
 
     @include mq(mobileLandscape) {
@@ -135,12 +132,13 @@ header.content__head--interactive,
       font-size: 25px;
     }
     @include mq(desktop) {
-      padding: 6px 20px 20px;
-      font-size: 64px;
+      padding-top: 10px;
+      font-size: 30px;
     }
     @include mq(leftCol) {
-      font-size: 64px;
-      padding-top: 0;
+      padding-top: 20px;
+      font-size: 30px;
+      // padding-top: 0;
       margin-top: -9px;
       line-height: 1;
       body.ios &,
@@ -149,11 +147,11 @@ header.content__head--interactive,
       }
     }
     @include mq(wide) {
-      font-size: 64px;
+      padding-top: 20px;
+      font-size: 30px;
       padding-right: 40px;
     }
   }
-
 
   .ios &,
   .android & {

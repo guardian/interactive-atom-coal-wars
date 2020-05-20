@@ -14,6 +14,39 @@
     height: auto;
   }
 
+  // // CAPTIONS
+  .element-image__caption {
+    padding: 6px 0 6px 0;
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+    font-family: "Guardian Text Sans Web", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    color: #6b5840;
+    display: block;
+    width: 100%;
+  }
+
+  .element--showcase .element-image__caption {
+    @include mq(leftCol) {
+      width: 111%;
+    }
+    @include mq(wide) {
+      width: 123%;
+    }
+  }
+
+  .element-image__credit {
+    padding: 6px 0 6px 0;
+    margin: 0;
+    font-family: "Guardian Text Sans Web", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    color: #121212;
+    display: block;
+    width: 100%;
+  }
+
   @include mq(tablet) {
     width: 620px;
     margin-left: 0;
