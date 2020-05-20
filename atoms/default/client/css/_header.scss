@@ -43,8 +43,10 @@ header.content__head--interactive,
 
   .content__labels,
   .article-kicker {
+    padding: 0;
+
     // position: absolute;
-    padding-top: 10px;
+    // padding-top: 10px;
     body.ios &,
     body.android & {
       background-color: transparent;
