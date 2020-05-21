@@ -5,7 +5,8 @@ $mobileLandscape-header-height: 600px;
 header.content__head--interactive,
 .article .article__header {
   // Picture pseudoelement
-  & > .gs-container:before {
+  & > .gs-container:before,
+  &#article-header:before {
     content: "";
     display: block;
     position: absolute;
@@ -157,12 +158,12 @@ header.content__head--interactive,
 
   .ios &,
   .android & {
-    margin-bottom: 100px;
-    .meta {
-      position: absolute;
-      bottom: 0;
-      transform: translateY(100%);
-      z-index: 100;
+    .headline {
+      position: relative;
+      z-index: 10;
+      margin-left: 0;
+      margin-right: 10px;
     }
   }
+
 }

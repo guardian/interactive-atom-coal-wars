@@ -8,7 +8,8 @@
   padding: 0;
 }
 
-.content--interactive .content__main-column--interactive {
+.content--interactive .content__main-column--interactive,
+.article__body .prose {
   background: none;
   img {
     height: auto;
@@ -23,6 +24,7 @@
     border-bottom: 1px solid #dcdcdc;
     font-weight: 200;
     margin: 24px 0;
+    font-style: normal;
 
     em {
       display: block;
@@ -45,6 +47,7 @@
     }
 
     &:before {
+      font-family: "Guardian Egyptian Web", "Guardian Headline Full", "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
       font-weight: 600;
       color: #c70000;
       content: '“';
