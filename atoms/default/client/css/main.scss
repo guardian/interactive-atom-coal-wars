@@ -2,7 +2,6 @@
 @import "mq";
 @import "palette";
 @import "header";
-// @import "enhancer";
 .interactive-atom {
   margin: 0;
   padding: 0;
@@ -16,7 +15,8 @@
   }
 
   .quoted {
-    font-family: "Guardian Egyptian Web", "Guardian Headline Full", "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
+    font-family: "Guardian Egyptian Web", "Guardian Headline Full",
+      "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
     font-size: 20px;
     line-height: 1.2;
     padding-right: 20%;
@@ -47,10 +47,11 @@
     }
 
     &:before {
-      font-family: "Guardian Egyptian Web", "Guardian Headline Full", "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
+      font-family: "Guardian Egyptian Web", "Guardian Headline Full",
+        "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
       font-weight: 600;
       color: #c70000;
-      content: '“';
+      content: "“";
       display: block;
       font-size: 3.5em;
       line-height: 10px;
@@ -78,6 +79,17 @@
     }
     @include mq(wide) {
       width: 123%;
+    }
+  }
+
+  h2 {
+    margin-top: 24px;
+    &:before {
+      content: "";
+      width: 80px;
+      height: 2px;
+      display: block;
+      background-color: #c70000;
     }
   }
 

@@ -45,13 +45,35 @@ header.content__head--interactive,
   .content__labels,
   .article-kicker {
     padding: 0;
+    background-color: #241006;
+    display: inline-block;
+    margin-left: -10px;
+    margin-top: 106vw;
+    margin-bottom: -6px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+    @include mq(mobileLandscape) {
+      margin-top: 500px;
+    }
+    @include mq(tablet) {
+      margin-top: 453px;
+      margin-left: -20px;
+      padding-left: 10px;
+    }
+    @include mq(desktop) {
+      margin-top: 498px;
+    }
+    @include mq(leftCol) {
+      margin-top: 672px;
+      margin-left: -180px;
+    }
+    @include mq(wide) {
+      margin-top: 515px;
+    }
 
     // position: absolute;
     // padding-top: 10px;
-    body.ios &,
-    body.android & {
-      background-color: transparent;
-    }
+
     .article-kicker__section,
     .content__section-label {
       display: none;
@@ -59,17 +81,18 @@ header.content__head--interactive,
     .label__link-wrapper,
     .ios & a,
     .android & a {
-      background-color: #f6f6f6;
       display: inline-block;
       line-height: 30px;
-      padding: 0 10px 0;
+      padding: 0 10px 0 0;
       font-weight: 700;
       font-size: 17px;
+      color: #fcf1e9;
+      background-color: #241006;
     }
     @include mq(leftCol) {
       position: static;
-      margin-left: auto;
-      width: auto;
+      // margin-left: auto;
+      // width: auto;
     }
   }
 
@@ -81,30 +104,24 @@ header.content__head--interactive,
     font-family: "Guardian Titlepiece", "Guardian Headline Full",
       "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
     margin-left: -10px;
-    margin-top: 117vw;
+    // margin-top: 117vw;
     color: #fcf1e9;
     background-color: #241006;
 
-    @include mq(mobileLandscape) {
-      margin-top: 550px;
-    }
     @include mq(tablet) {
       line-height: 0.95;
       font-size: 42px;
-      margin-top: 503px;
       margin-left: -20px;
       padding-left: 20px;
     }
     @include mq(desktop) {
       padding: 6px 20px 20px;
       font-size: 64px;
-      margin-top: 547px;
     }
     @include mq(leftCol) {
       font-size: 64px;
       padding-top: 0;
       line-height: 1;
-      margin-top: 722px;
       margin-left: -180px;
       body.ios &,
       body.android & {
@@ -114,7 +131,6 @@ header.content__head--interactive,
     @include mq(wide) {
       font-size: 64px;
       padding-right: 40px;
-      margin-top: 565px;
       margin-left: -260px;
     }
   }
@@ -124,6 +140,7 @@ header.content__head--interactive,
     padding: 6px 10px 20px;
     font-size: 20px;
     line-height: 1;
+    font-weight: 200;
     font-family: "Guardian Egyptian Web", "Guardian Headline Full",
       "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
     margin-left: -10px;
@@ -165,5 +182,4 @@ header.content__head--interactive,
       margin-right: 10px;
     }
   }
-
 }
