@@ -14,6 +14,20 @@
     height: auto;
   }
 
+  p:first-of-type {
+    &::first-letter {
+      font-family: "Guardian Titlepiece", "Guardian Headline Full", "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
+      font-size: 83px;
+      line-height: 1;
+      float: left;
+      margin-top: 2px;
+      margin-right: 16px;
+      background-color: #241006;
+      color: #fff;
+      padding: 4px 16px;
+    }
+  }
+
   .quoted {
     font-family: "Guardian Egyptian Web", "Guardian Headline Full",
       "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
