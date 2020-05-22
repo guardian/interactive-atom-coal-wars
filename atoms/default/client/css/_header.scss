@@ -66,13 +66,25 @@ header.content__head--interactive,
     @include mq(leftCol) {
       margin-top: 672px;
       margin-left: -180px;
+      width: 220px;
     }
     @include mq(wide) {
       margin-top: 515px;
+      margin-left: -260px;
     }
 
-    // position: absolute;
-    // padding-top: 10px;
+    .badge-slot {
+      @include mq(leftCol) {
+        display: inline-block;
+        img {
+          height: 2.625rem;
+        }
+      }
+    }
+
+    .content__series-label {
+      vertical-align: top;
+    }
 
     .article-kicker__section,
     .content__section-label {
