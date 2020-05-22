@@ -14,7 +14,7 @@
     height: auto;
   }
 
-  p:first-of-type {
+  & > p:first-of-type {
     &::first-letter {
       font-family: "Guardian Titlepiece", "Guardian Headline Full", "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
       font-size: 83px;
