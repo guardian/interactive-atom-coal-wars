@@ -7,6 +7,18 @@
   padding: 0;
 }
 
+figure[data-atom-id="interactives/2020/05/EastGermanyCoal/default"] {
+  visibility: hidden;
+}
+
+.ios,
+.android {
+  .article__body,
+  .tags {
+    background-color: #fff;
+  }
+}
+
 .content--interactive .content__main-column--interactive,
 .article__body .prose {
   background: none;
@@ -85,6 +97,13 @@
     color: #6b5840;
     display: block;
     width: 100%;
+    @media (prefers-color-scheme: dark) {
+      color: #dcdcdc;
+    }
+    body.android.dark-mode-on & {
+      color: #dcdcdc;
+    }
+
   }
 
   .element--showcase .element-image__caption {
@@ -117,6 +136,18 @@
     display: block;
     width: 100%;
   }
+
+
+  .element-image__credit,
+  .element-image__caption {
+    @media (prefers-color-scheme: dark) {
+    color: #dcdcdc;
+    }
+    body.android.dark-mode-on & {
+      color: #dcdcdc;
+    }
+  }
+
 
   @include mq(tablet) {
     width: 620px;

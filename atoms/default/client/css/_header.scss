@@ -4,8 +4,11 @@ $mobileLandscape-header-height: 600px;
 
 header.content__head--interactive,
 .article .article__header {
+  background-color: #fff;
+
   // Picture pseudoelement
   & > .gs-container:before,
+  &#feature-header:before,
   &#article-header:before {
     content: "";
     display: block;
@@ -42,12 +45,15 @@ header.content__head--interactive,
     }
   }
 
+
+  .content__labels {
+    margin-left: -10px;
+  }
   .content__labels,
   .article-kicker {
     padding: 0;
-    background-color: #241006;
+    background-color: #241006 !important;
     display: inline-block;
-    margin-left: -10px;
     margin-top: 106vw;
     margin-bottom: -6px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -71,6 +77,15 @@ header.content__head--interactive,
     @include mq(wide) {
       margin-top: 515px;
       margin-left: -260px;
+    }
+
+    .ios &,
+    .android & {
+      padding-left: 10px;
+      .article-kicker__highlight {
+        background-color: transparent;
+        box-shadow: none;
+      }
     }
 
     .badge-slot {
@@ -98,8 +113,8 @@ header.content__head--interactive,
       padding: 0 10px 0 0;
       font-weight: 700;
       font-size: 17px;
-      color: #fcf1e9;
-      background-color: #241006;
+      color: #fcf1e9 !important;
+      background-color: #241006 !important;
     }
     @include mq(leftCol) {
       position: static;
@@ -117,8 +132,8 @@ header.content__head--interactive,
       "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
     margin-left: -10px;
     // margin-top: 117vw;
-    color: #fcf1e9;
-    background-color: #241006;
+    color: #fcf1e9 !important;
+    background-color: #241006 !important;
 
     @include mq(tablet) {
       line-height: 0.95;

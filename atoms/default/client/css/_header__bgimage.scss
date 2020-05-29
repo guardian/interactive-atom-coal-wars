@@ -2,7 +2,8 @@ header.content__head--interactive,
 .article__header {
 
   & > .gs-container:before,
-  &#article-header:before {
+  &#article-header:before,
+  &#feature-header:before {
     background-color: #121212;
     background-image: url(https://uploads.guim.co.uk/2020/05/13/SL_compressed.jpg);
   }
